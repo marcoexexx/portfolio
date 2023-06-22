@@ -3,8 +3,7 @@ import { IoLogoGithub } from 'react-icons/io5';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { Link, ThemeToggleButton } from ".";
 import Text from "./Text";
-import { sectionScroll } from "../utils/sectionScroll";
-import { linkOpen } from "../utils/linkOpen";
+import { linkOpen, sectionScroll } from "../utils";
 
 export function Header() {
   return (

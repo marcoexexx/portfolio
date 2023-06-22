@@ -2,7 +2,7 @@ import { Box, HStack, VStack, useColorModeValue } from "@chakra-ui/react";
 
 import { AnimatedSection, Link } from "..";
 import Text from "../Text";
-import { sectionScroll } from "../../utils/sectionScroll";
+import { sectionScroll } from "../../utils";
 
 export function HeroSection() {
   return (
