@@ -1,25 +1,35 @@
 import { Container } from "@chakra-ui/react";
 import { AppContainer, Bio, Footer, Header, LanguageSelectionButton } from "./components";
-import { useLanguage } from "./hooks";
 import { AboutSection, ContactSection, HeroSection, ProfileSection, ProjectsSection } from "./components/sections";
-import Text from "./components/Text";
+import { Suspense, useState } from "react";
+import { countries, i18n } from "./i18n";
+import Loading from "./components/Loading";
+import Error from "./components/Error";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 export default function App() {
-  const { current, onChangeLanguage, loading } = useLanguage();
+  const [current, setCurrent] = useState<keyof typeof countries>(i18n.local as keyof typeof countries);
 
-  if (loading) return <Text tx="common.loading" />
+  const onChangeCurrent = (current: keyof typeof countries) => {
+    i18n.load(current);
+    setCurrent(current);
+  }
 
   return (
     <AppContainer>
       <Header />
       <Container>
-        <HeroSection />
-        <ProfileSection />
-        <AboutSection />
-        <ProjectsSection />
-        <ContactSection />
-        <Bio />
-        <LanguageSelectionButton current={current} onChange={onChangeLanguage} />
+        <Suspense fallback={<Loading />}>
+          <ErrorBoundary fallback={<Error />}>
+            <HeroSection />
+            <ProfileSection />
+            <AboutSection />
+            <ProjectsSection />
+            <ContactSection />
+            <Bio />
+            <LanguageSelectionButton current={current} onChangeCurrent={onChangeCurrent} />
+          </ErrorBoundary>
+        </Suspense>
         <Footer />
       </Container>
     </AppContainer>

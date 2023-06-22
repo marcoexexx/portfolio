@@ -6,6 +6,18 @@ import zh from './zh';
 import my from './my';
 
 import _get from 'lodash/get';
+import { getStore, setStore } from '../utils/storage';
+
+
+const LANGUAGE_PREFIX: "language" = "language";
+
+export const countries = {
+  en: "English",
+  ja: "Japan",
+  my: "Myanmar",
+  ko: "Korea",
+  zh: "Taiwan"
+}
 
 export type I18nOptions = {
   [K: string]: string
@@ -17,21 +29,24 @@ export type I18n = {
   }
   local: string, // keyof I18n["translations"],
   t: (key: TxPath, options?: I18nOptions) => string,
-  load: (lang: string) => void
+  load: (lang: string) => void,
 }
 
 export const i18n: I18n = {
   translations: { en, ko, my, ja, zh },
-  local: "en",
+  local: getStore<keyof typeof countries>(LANGUAGE_PREFIX) || "en",
+  
   t(key, options) {
     const localPrefix = this.translations[this.local as keyof I18n["translations"]];
     let msg = _get(localPrefix, key);
     if (options) msg = strTemplate(_get(localPrefix, key), options);
     return msg;
   },
-  load(lang) {
+
+  load(lang: string) {
+    setStore(LANGUAGE_PREFIX, lang);
     this.local = lang;
-  }
+  },
 }
 
 

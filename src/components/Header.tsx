@@ -38,9 +38,9 @@ export function Header() {
           mt={{ base: 4, md: 0 }}
           gap={5}
         >
-          <Link tx="navbar.about" href="#about" />
-          <Link tx="navbar.projects" href="#projects" />
-          <Link tx="navbar.contact" href="#contact" />
+          <Link tx="navbar.about" onClick={sectionScroll("about")} />
+          <Link tx="navbar.projects" onClick={sectionScroll("projects")} />
+          <Link tx="navbar.contact" onClick={sectionScroll("contact")} />
           <Link 
             href="https://github.com/alk-neq-me/portfolio" 
             target="_blank"
