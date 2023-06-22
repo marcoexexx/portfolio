@@ -114,12 +114,13 @@ export function ContactSection() {
                       <Box
                         key={i}
                         display='flex'
+                        alignItems="center"
                         flexDir='row'
                         gap={4}
                         fontSize="lg"
                       >
                         {info.icon}
-                        <Text opacity={0.5} fontSize="md" text={info.content} />
+                        <Text textAlign="start" opacity={0.5} fontSize="md" text={info.content} />
                       </Box>
                     ))}
                   </Box>

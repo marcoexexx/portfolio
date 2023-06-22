@@ -71,7 +71,7 @@ export function Header() {
               <MenuList>
                 <Link as={MenuItem} tx="navbar.about" onClick={onMenuClick("about")} />
                 <Link as={MenuItem} tx="navbar.projects" onClick={onMenuClick("projects")} />
-                <Link as={MenuItem} tx="navbar.contact" onClick={onMenuClick("contact")} />
+                <Link as={MenuItem} tx="navbar.contact" href="#contact" />
                 <Link as={MenuItem} tx="navbar.viewSource" onClick={onMenuClick("https://github.com/alk-neq-me/portfolio", "link")} />
               </MenuList>
             </Menu>

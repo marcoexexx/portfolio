@@ -44,8 +44,8 @@ export function HeroSection() {
               maxW={{ base: "270px", md: "320px" }}
             />
             <HStack gap={3}>
-              <Link tx="hero.cv" />
-              <Link tx="hero.contact" />
+              <Link tx="hero.cv" textDecor="underline" />
+              <Link tx="hero.contact" href="#contact" textDecor="underline" />
             </HStack>
           </VStack>
         </Box>
