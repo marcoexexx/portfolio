@@ -1,38 +1,42 @@
-import { Box, FormControl, Input, Tab, TabList, TabPanel, TabPanels, Tabs, Textarea, useColorModeValue, useToast } from "@chakra-ui/react";
-import { FaMapMarkerAlt } from 'react-icons/fa';
+import { Box, FormControl, IconButton, Input, Tab, TabList, TabPanel, TabPanels, Tabs, Textarea, useColorModeValue, useToast } from "@chakra-ui/react";
+import { FaFacebookF, FaGithubAlt, FaInstagram, FaMapMarkerAlt } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
 import { AiFillPhone } from 'react-icons/ai';
 import emailjs from '@emailjs/browser';
 
 import { AnimatedSection, Button } from "..";
 import Text from "../Text";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { IconBaseProps } from "react-icons";
+import { linkOpen } from "../../utils/linkOpen";
 
+
+const infomations = [
+  {
+    icon: (props: IconBaseProps) => <FaMapMarkerAlt {...props} />,
+    content: "Yangon, Myanmar, Mingaladon Township"
+  },
+  {
+    icon: (props: IconBaseProps) => <IoMdMail {...props} />,
+    content: "toyko2001@gmail.com"
+  },
+  {
+    icon: (props: IconBaseProps) => <AiFillPhone {...props} />,
+    content: "+959 263 446 808"
+  },
+]
 
 
 export function ContactSection() {
   const form = useRef<HTMLFormElement|null>(null);
   const toast = useToast();
+  const [loading, setLoading] = useState(false);
 
   const isInvalid = false;
 
-  const infomations = [
-    {
-      icon: <FaMapMarkerAlt color={useColorModeValue("black", "orange")} />,
-      content: "Yangon, Myanmar, Mingaladon Township"
-    },
-    {
-      icon: <IoMdMail color={useColorModeValue("black", "orange")} />,
-      content: "toyko2001@gmail.com"
-    },
-    {
-      icon: <AiFillPhone color={useColorModeValue("black", "orange")} />,
-      content: "+959 263 446 808"
-    },
-  ]
-
   const sendEmail = (event: React.FormEvent<HTMLDivElement>) => {
     event.preventDefault();
+    setLoading(true);
 
     if (form.current) emailjs.sendForm(
       import.meta.env.VITE_SERVICE_ID,
@@ -58,6 +62,7 @@ export function ContactSection() {
           isClosable: true,
         })
       })
+      .finally(() => setLoading(false))
   }
 
   return (
@@ -119,13 +124,26 @@ export function ContactSection() {
                         gap={4}
                         fontSize="lg"
                       >
-                        {info.icon}
+                        {info.icon({
+                          color: useColorModeValue("black", "orange")
+                        })}
                         <Text textAlign="start" opacity={0.5} fontSize="md" text={info.content} />
                       </Box>
                     ))}
                   </Box>
+                  <Box
+                    display='flex'
+                    flexDir='row'
+                    alignItems='center'
+                    mt={2}
+                  >
+                    <IconButton onClick={linkOpen("https://www.facebook.com/marco.exexx/")} color={useColorModeValue("black", "white")} variant='link' icon={<FaFacebookF />} aria-label="facebook link" />
+                    <IconButton onClick={linkOpen("https://www.instagram.com/marco.exexx/")} color={useColorModeValue("black", "white")} variant='link' icon={<FaInstagram />} aria-label="facebook link" />
+                    <IconButton onClick={linkOpen("https://www.github.com/alk-neq-me/")} color={useColorModeValue("black", "white")} variant='link' icon={<FaGithubAlt />} aria-label="facebook link" />
+                  </Box>
                 </Box>
               </TabPanel>
+
               <TabPanel>
                 {/* Email form */}
                 <Box p={2}
@@ -144,14 +162,13 @@ export function ContactSection() {
                     <Input type="email" placeholder="Email address" name="email" required />
                     <Textarea placeholder="Message" name="message" />
                     <Box alignSelf="end">
-                      <Button type="submit" text="Submit" variant="solid" />
+                      <Button isLoading={loading} type="submit" text="Submit" variant="solid" />
                     </Box>
                   </FormControl>
                 </Box>
               </TabPanel>
             </TabPanels>
           </Tabs>
-
         </Box>
       </Box>
     </AnimatedSection>

@@ -11,7 +11,7 @@ export function ProfileSection() {
         display="flex"
         flexDir={{ base: "column", md: "row" }}
         gap="13px"
-        alignItems="center"
+        alignItems={{ base: "start", md: "center" }}
         justifyContent="space-between"
       >
         <Box
@@ -26,7 +26,7 @@ export function ProfileSection() {
           />
         </Box>
         <VStack
-          alignItems="end"
+          alignItems={{ base: "start", md: "end" }}
           gap={0}
         >
           <Text

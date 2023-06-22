@@ -1,10 +1,12 @@
 import { Box, HStack, VStack, useColorModeValue } from "@chakra-ui/react";
+
 import { AnimatedSection, Link } from "..";
 import Text from "../Text";
+import { sectionScroll } from "../../utils/sectionScroll";
 
 export function HeroSection() {
   return (
-    <AnimatedSection delay={0}>
+    <AnimatedSection delay={0.3}>
       <Box
         w="full"
         pt={{ base: "130px", md: "150px" }}
@@ -44,8 +46,8 @@ export function HeroSection() {
               maxW={{ base: "270px", md: "320px" }}
             />
             <HStack gap={3}>
-              <Link tx="hero.cv" textDecor="underline" />
-              <Link tx="hero.contact" href="#contact" textDecor="underline" />
+              <Link  tx="hero.cv" textDecor="underline" href="public/cv_form.pdf" download />
+              <Link onClick={sectionScroll("contact")} tx="hero.contact" textDecor="underline" />
             </HStack>
           </VStack>
         </Box>

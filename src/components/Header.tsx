@@ -3,15 +3,10 @@ import { IoLogoGithub } from 'react-icons/io5';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { Link, ThemeToggleButton } from ".";
 import Text from "./Text";
+import { sectionScroll } from "../utils/sectionScroll";
+import { linkOpen } from "../utils/linkOpen";
 
 export function Header() {
-  function onMenuClick(href: string = "#", mode: "page" | "link" = 'page') {
-    return function() {
-      if (mode==='page') window.document.location = `#${href}`;
-      else if (mode === 'link') window.open(href, "_blank");
-    }
-  }
-
   return (
     <Box
       position="fixed"
@@ -69,10 +64,10 @@ export function Header() {
                 aria-label="Options"
               />
               <MenuList>
-                <Link as={MenuItem} tx="navbar.about" onClick={onMenuClick("about")} />
-                <Link as={MenuItem} tx="navbar.projects" onClick={onMenuClick("projects")} />
-                <Link as={MenuItem} tx="navbar.contact" href="#contact" />
-                <Link as={MenuItem} tx="navbar.viewSource" onClick={onMenuClick("https://github.com/alk-neq-me/portfolio", "link")} />
+                <Link as={MenuItem} tx="navbar.about" onClick={sectionScroll("about")} />
+                <Link as={MenuItem} tx="navbar.projects" onClick={sectionScroll("projects")} />
+                <Link as={MenuItem} tx="navbar.contact" onClick={sectionScroll("contact")} />
+                <Link as={MenuItem} tx="navbar.viewSource" onClick={linkOpen("https://github.com/alk-neq-me/portfolio")} />
               </MenuList>
             </Menu>
           </Box>
