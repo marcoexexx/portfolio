@@ -1,18 +1,21 @@
 import { Container } from "@chakra-ui/react";
-import { AppContainer, Bio, Footer, Header, LanguageSelectionButton } from "./components";
-import { AboutSection, ContactSection, HeroSection, ProfileSection, ProjectsSection } from "./components/sections";
-import { Suspense, useState } from "react";
+import { Suspense, lazy, useState } from "react";
+
 import { countries, i18n } from "./i18n";
-import Loading from "./components/Loading";
-import Error from "./components/Error";
-import ErrorBoundary from "./components/ErrorBoundary";
+import { AppContainer, Bio, Error, ErrorBoundary, Footer, Header, Loading } from "./components";
+import { AboutSection, HeroSection,  } from "./components/sections";
+
+const ProfileSection = lazy(() => import("./components/sections/ProfileSection"));
+const ProjectsSection = lazy(() => import("./components/sections/ProjectsSection"));
+const ContactSection = lazy(() => import("./components/sections/ContactSection"));
+const LanguageSelectionButton = lazy(() => import("./components/LanguageSelectionButton"));
 
 export default function App() {
   const [current, setCurrent] = useState<keyof typeof countries>(i18n.local as keyof typeof countries);
 
   const onChangeCurrent = (current: keyof typeof countries) => {
-    i18n.load(current);
     setCurrent(current);
+    i18n.load(current);
   }
 
   return (

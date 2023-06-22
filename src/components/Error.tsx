@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react"
 import Text from "./Text"
 
-function Error() {
+export function Error() {
   return (
     <Box
       w="full"
@@ -23,5 +23,3 @@ function Error() {
     </Box>
   )
 }
-
-export default Error;

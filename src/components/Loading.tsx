@@ -1,7 +1,7 @@
-import { Box } from "@chakra-ui/react"
+import { Box, Spinner } from "@chakra-ui/react"
 import Text from "./Text"
 
-function Loading() {
+export function Loading() {
   return (
     <Box
       w="full"
@@ -15,13 +15,13 @@ function Loading() {
         w="full"
         h="150px"
         display="flex"
+        flexDir='column'
         alignItems="center"
         justifyContent="space-around"
       >
+        <Spinner size='xl' />
         <Text tx="common.loading" />
       </Box>
     </Box>
   )
 }
-
-export default Loading

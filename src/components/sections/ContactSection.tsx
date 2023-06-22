@@ -27,7 +27,7 @@ const infomations = [
 ]
 
 
-export function ContactSection() {
+export default function ContactSection() {
   const form = useRef<HTMLFormElement|null>(null);
   const toast = useToast();
   const [loading, setLoading] = useState(false);

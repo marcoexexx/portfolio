@@ -2,7 +2,7 @@ import { Box } from "@chakra-ui/react";
 import { AnimatedSection } from "..";
 import Text from "../Text";
 
-export function ProjectsSection() {
+export default function ProjectsSection() {
   return (
     <AnimatedSection delay={0.7}>
       <Box
