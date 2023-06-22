@@ -1,5 +1,7 @@
-import { Box, FormControl, Input, Textarea } from "@chakra-ui/react";
-import { FiMapPin } from 'react-icons/fi';
+import { Box, FormControl, Input, Tab, TabList, TabPanel, TabPanels, Tabs, Textarea, useColorModeValue, useToast } from "@chakra-ui/react";
+import { FaMapMarkerAlt } from 'react-icons/fa';
+import { IoMdMail } from 'react-icons/io';
+import { AiFillPhone } from 'react-icons/ai';
 import emailjs from '@emailjs/browser';
 
 import { AnimatedSection, Button } from "..";
@@ -7,21 +9,27 @@ import Text from "../Text";
 import { useRef } from "react";
 
 
-const infomations = [
-  {
-    icon: <FiMapPin />,
-    content: "Home"
-  },
-  {
-    icon: <FiMapPin />,
-    content: "Home"
-  },
-]
 
 export function ContactSection() {
   const form = useRef<HTMLFormElement|null>(null);
+  const toast = useToast();
 
   const isInvalid = false;
+
+  const infomations = [
+    {
+      icon: <FaMapMarkerAlt color={useColorModeValue("black", "orange")} />,
+      content: "Yangon, Myanmar, Mingaladon Township"
+    },
+    {
+      icon: <IoMdMail color={useColorModeValue("black", "orange")} />,
+      content: "toyko2001@gmail.com"
+    },
+    {
+      icon: <AiFillPhone color={useColorModeValue("black", "orange")} />,
+      content: "+959 263 446 808"
+    },
+  ]
 
   const sendEmail = (event: React.FormEvent<HTMLDivElement>) => {
     event.preventDefault();
@@ -32,8 +40,24 @@ export function ContactSection() {
       form.current,
       import.meta.env.VITE_PUBLIC_KEY
     )
-      .then(res => console.log(res.text))
-      .catch(err => console.log(err))
+      .then(_ => {
+        toast({
+          title: 'Email sent.',
+          description: 'Your email has been successfully sent.',
+          status: 'success',
+          duration: 5000,
+          isClosable: true,
+        })
+      })
+      .catch(_err => {
+        toast({
+          title: 'Error!',
+          description: 'An error occurred while sending the email.',
+          status: 'error',
+          duration: 5000,
+          isClosable: true,
+        })
+      })
   }
 
   return (
@@ -55,46 +79,78 @@ export function ContactSection() {
           />
         </Box>
 
+        <Text text="Interested in working together or have any questions? Feel free to reach out to me!" />
+
         <Box
           display="flex"
-          // flexDir={{ md: "row", base: "column" }}
           flexDir="column"
         >
-          {/* Social */}
-          <Box p={2}
-            display="flex"
-            flexDir="column"
-            alignItems="start"
-            gap={6}
-          >
-            <Text text="Contact Infomation"
-              fontSize="3xl"
-              fontFamily="heading"
-              textAlign="center"
-            />
-            {infomations.map((info, i) => (
-              <Box
-                key={i}
-                display='flex'
-                flexDir='row'
-                gap={4}
-                fontSize="lg"
-              >
-                {info.icon}
-                <Text text={info.content} />
-              </Box>
-            ))}
-          </Box>
+          <Tabs align="end" colorScheme={useColorModeValue("purple", "orange")}>
+            <TabList>
+              <Tab>Address</Tab>
+              <Tab>Email</Tab>
+            </TabList>
 
-          {/* Email form */}
-          <FormControl ref={form} as="form" isInvalid={isInvalid} p={2} display="flex" gap={2} flexDir="column" onSubmit={sendEmail}>
-            <Input type="text" placeholder="Type your full name" name="from_name" required />
-            <Input type="email" placeholder="Email address" name="email" required />
-            <Textarea placeholder="Message" name="message" />
-            <Box alignSelf="end">
-              <Button type="submit" text="Submit" variant="solid" />
-            </Box>
-          </FormControl>
+            <TabPanels>
+              <TabPanel>
+                {/* Social */}
+                <Box p={2}
+                  display="flex"
+                  flexDir="column"
+                  alignItems="start"
+                  gap={6}
+                >
+                  <Text text="Social and Address"
+                    fontSize="3xl"
+                    fontFamily="heading"
+                    textAlign="center"
+                  />
+                  <Box
+                    display="flex"
+                    flexDir="column"
+                    gap={2}
+                  >
+                    {infomations.map((info, i) => (
+                      <Box
+                        key={i}
+                        display='flex'
+                        flexDir='row'
+                        gap={4}
+                        fontSize="lg"
+                      >
+                        {info.icon}
+                        <Text opacity={0.5} fontSize="md" text={info.content} />
+                      </Box>
+                    ))}
+                  </Box>
+                </Box>
+              </TabPanel>
+              <TabPanel>
+                {/* Email form */}
+                <Box p={2}
+                  display="flex"
+                  flexDir="column"
+                  alignItems="start"
+                  gap={6}
+                >
+                  <Text text="Send me a message"
+                    fontSize="3xl"
+                    fontFamily="heading"
+                    textAlign="center"
+                  />
+                  <FormControl ref={form} as="form" isInvalid={isInvalid} p={2} display="flex" gap={2} flexDir="column" onSubmit={sendEmail}>
+                    <Input type="text" placeholder="Type your full name" name="from_name" required />
+                    <Input type="email" placeholder="Email address" name="email" required />
+                    <Textarea placeholder="Message" name="message" />
+                    <Box alignSelf="end">
+                      <Button type="submit" text="Submit" variant="solid" />
+                    </Box>
+                  </FormControl>
+                </Box>
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
+
         </Box>
       </Box>
     </AnimatedSection>
