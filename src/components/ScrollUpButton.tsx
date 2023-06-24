@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import { Button } from ".";
+import { Collapse } from "@chakra-ui/react";
 
 interface ScrollUpButtonProps {
   visibility: boolean;
@@ -13,16 +14,17 @@ export function ScrollUpButton(props: ScrollUpButtonProps) {
   }, []);
 
   return (
-    <Button 
-      onClick={handleScrollTop}
-      variant='text' 
-      fontSize='4xl' 
-      opacity={visibility ? 1 : 0}
-      position='fixed' 
-      bottom='20px'
-      right={{ base: '15px', md: '30px' }}
-      text="☝️" 
-      zIndex={100}
-    />
+    <Collapse in={visibility} animateOpacity>
+      <Button 
+        onClick={handleScrollTop}
+        variant='text' 
+        fontSize='4xl' 
+        position='fixed' 
+        bottom='20px'
+        right={{ base: '15px', md: '30px' }}
+        text="☝️" 
+        zIndex={100}
+      />
+    </Collapse>
   )
 }
