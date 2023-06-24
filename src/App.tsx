@@ -2,8 +2,9 @@ import { Container } from "@chakra-ui/react";
 import { Suspense, lazy, useState } from "react";
 
 import { countries, i18n } from "./i18n";
-import { AppContainer, Bio, Error, ErrorBoundary, Footer, Header, Loading } from "./components";
+import { AppContainer, Bio, Error, ErrorBoundary, Footer, Header, Loading, ScrollUpButton } from "./components";
 import { AboutSection, HeroSection,  } from "./components/sections";
+import { useScrollTop } from "./hooks";
 
 const ProfileSection = lazy(() => import("./components/sections/ProfileSection"));
 const ProjectsSection = lazy(() => import("./components/sections/ProjectsSection"));
@@ -12,6 +13,8 @@ const LanguageSelectionButton = lazy(() => import("./components/LanguageSelectio
 
 export default function App() {
   const [current, setCurrent] = useState<keyof typeof countries>(i18n.local as keyof typeof countries);
+
+  const { scrollButtonVisiblity } = useScrollTop();
 
   const onChangeCurrent = (current: keyof typeof countries) => {
     setCurrent(current);
@@ -35,6 +38,7 @@ export default function App() {
         </Suspense>
         <Footer />
       </Container>
+      <ScrollUpButton visibility={scrollButtonVisiblity} />
     </AppContainer>
   )
 }
