@@ -3,10 +3,9 @@ import { Suspense, lazy, useState } from "react";
 
 import { countries, i18n } from "./i18n";
 import { AppContainer, Bio, Error, ErrorBoundary, Footer, Header, Loading, ScrollUpButton } from "./components";
-import { AboutSection, HeroSection,  } from "./components/sections";
+import { AboutSection, HeroSection, ProfileSection,  } from "./components/sections";
 import { useScrollTop } from "./hooks";
 
-const ProfileSection = lazy(() => import("./components/sections/ProfileSection"));
 const ProjectsSection = lazy(() => import("./components/sections/ProjectsSection"));
 const ContactSection = lazy(() => import("./components/sections/ContactSection"));
 const LanguageSelectionButton = lazy(() => import("./components/LanguageSelectionButton"));
@@ -14,7 +13,7 @@ const LanguageSelectionButton = lazy(() => import("./components/LanguageSelectio
 export default function App() {
   const [current, setCurrent] = useState<keyof typeof countries>(i18n.local as keyof typeof countries);
 
-  const { scrollButtonVisiblity } = useScrollTop();
+  const { scrollButtonVisiblity } = useScrollTop(70);
 
   const onChangeCurrent = (current: keyof typeof countries) => {
     setCurrent(current);
@@ -38,7 +37,7 @@ export default function App() {
         </Suspense>
         <Footer />
       </Container>
-      <ScrollUpButton visibility={scrollButtonVisiblity} />
+      { scrollButtonVisiblity && <ScrollUpButton /> }
     </AppContainer>
   )
 }

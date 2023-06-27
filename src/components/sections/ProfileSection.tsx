@@ -2,7 +2,7 @@ import { Box, Image, VStack } from "@chakra-ui/react";
 import { AnimatedSection } from "..";
 import Text from "../Text";
 
-export default function ProfileSection() {
+export function ProfileSection() {
   return (
     <AnimatedSection delay={0.2}>
       <Box

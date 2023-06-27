@@ -5,3 +5,4 @@ export * from './storage';
 export * from './sectionScroll';
 export * from './linkOpen';
 export * from './getProjects';
+export * from './getTechnologies';

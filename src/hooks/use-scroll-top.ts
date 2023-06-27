@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
-export function useScrollTop() {
+export function useScrollTop(offset: number) {
   const [scrollButtonVisiblity, setScrollButtonVisiblity] = useState(false);
 
   useEffect(() => {
     const handleScrollButtonVisiblity = () => {
-      window.scrollY > 50 ? setScrollButtonVisiblity(true) : setScrollButtonVisiblity(false);
+      window.scrollY > offset ? setScrollButtonVisiblity(true) : setScrollButtonVisiblity(false);
     };
 
     window.addEventListener('scroll', handleScrollButtonVisiblity);
