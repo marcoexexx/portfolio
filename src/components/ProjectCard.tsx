@@ -13,7 +13,7 @@ interface ProjectCardProps {
 export default function ProjectCard(props: ProjectCardProps) {
   const { project, showDescription } = props;
 
-  const { title, description, image, source, link, technologies } = getProject(project);
+  const { title, getDescription, image, source, link, technologies } = getProject(project);
 
   return (
     <Box
@@ -39,7 +39,7 @@ export default function ProjectCard(props: ProjectCardProps) {
         />
       </Link>
       {showDescription && <Text lineHeight="1.2rem" fontFamily="heading">
-        {description}
+        {getDescription()}
         {link && <IconButton onClick={linkOpen(link)} size='xs' ml={1} variant='text' icon={<FiExternalLink size="1rem" />} aria-label="external link" />}
       </Text>}
 

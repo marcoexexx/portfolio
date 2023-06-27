@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const NUMBER_OF_COLS_PREFIX: "cols" = "cols";
 
-export default function ProjectsSection() {
+export function ProjectsSection() {
   const [numberOfCols, setNumberOfCols] = useState(getStore<number>(NUMBER_OF_COLS_PREFIX) || 2);
 
   const handleChangeGridView = (event: React.ChangeEvent<HTMLInputElement>) => {

@@ -3,10 +3,9 @@ import { Suspense, lazy, useState } from "react";
 
 import { countries, i18n } from "./i18n";
 import { AppContainer, Bio, Error, ErrorBoundary, Footer, Header, Loading, ScrollUpButton } from "./components";
-import { AboutSection, HeroSection, ProfileSection,  } from "./components/sections";
+import { AboutSection, HeroSection, ProfileSection, ProjectsSection,  } from "./components/sections";
 import { useScrollTop } from "./hooks";
 
-const ProjectsSection = lazy(() => import("./components/sections/ProjectsSection"));
 const ContactSection = lazy(() => import("./components/sections/ContactSection"));
 const LanguageSelectionButton = lazy(() => import("./components/LanguageSelectionButton"));
 

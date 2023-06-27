@@ -6,25 +6,10 @@ import emailjs from '@emailjs/browser';
 
 import { AnimatedSection, Button } from "..";
 import Text from "../Text";
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { IconBaseProps } from "react-icons";
 import { linkOpen } from "../../utils/linkOpen";
-
-
-const infomations = [
-  {
-    icon: (props: IconBaseProps) => <FaMapMarkerAlt {...props} />,
-    content: "Yangon, Myanmar, Mingaladon Township"
-  },
-  {
-    icon: (props: IconBaseProps) => <IoMdMail {...props} />,
-    content: "toyko2001@gmail.com"
-  },
-  {
-    icon: (props: IconBaseProps) => <AiFillPhone {...props} />,
-    content: "+959 263 446 808"
-  },
-]
+import { i18n } from "../../i18n";
 
 
 export default function ContactSection() {
@@ -33,6 +18,22 @@ export default function ContactSection() {
   const [loading, setLoading] = useState(false);
 
   const isInvalid = false;
+
+  const infomations = useMemo(() => [
+    {
+      icon: (props: IconBaseProps) => <FaMapMarkerAlt {...props} />,
+      content: i18n.t("contact.address")
+    },
+    {
+      icon: (props: IconBaseProps) => <IoMdMail {...props} />,
+      content: i18n.t("contact.email")
+    },
+    {
+      icon: (props: IconBaseProps) => <AiFillPhone {...props} />,
+      content: i18n.t("contact.phone")
+    },
+  ], [i18n.local]);
+
 
   const sendEmail = (event: React.FormEvent<HTMLDivElement>) => {
     event.preventDefault();
@@ -84,7 +85,7 @@ export default function ContactSection() {
           />
         </Box>
 
-        <Text text="Interested in working together or have any questions? Feel free to reach out to me!" />
+        <Text tx="contact.description" />
 
         <Box
           display="flex"
@@ -92,8 +93,8 @@ export default function ContactSection() {
         >
           <Tabs align="end" colorScheme={useColorModeValue("purple", "orange")}>
             <TabList>
-              <Tab>Address</Tab>
-              <Tab>Email</Tab>
+              <Tab>{i18n.t("contact.labelAddress")}</Tab>
+              <Tab>{i18n.t("contact.labelEmail")}</Tab>
             </TabList>
 
             <TabPanels>
@@ -105,7 +106,7 @@ export default function ContactSection() {
                   alignItems="start"
                   gap={6}
                 >
-                  <Text text="Social and Address"
+                  <Text tx="contact.socialAndAddress"
                     fontSize="3xl"
                     fontFamily="heading"
                     textAlign="center"
@@ -152,17 +153,17 @@ export default function ContactSection() {
                   alignItems="start"
                   gap={6}
                 >
-                  <Text text="Send me a message"
+                  <Text tx="contact.sendMe"
                     fontSize="3xl"
                     fontFamily="heading"
                     textAlign="center"
                   />
                   <FormControl ref={form} as="form" isInvalid={isInvalid} p={2} display="flex" gap={2} flexDir="column" onSubmit={sendEmail}>
-                    <Input type="text" placeholder="Type your full name" name="from_name" required />
-                    <Input type="email" placeholder="Email address" name="email" required />
-                    <Textarea placeholder="Message" name="message" />
+                    <Input type="text" placeholder={i18n.t("contact.inputs.name")} name="from_name" required />
+                    <Input type="email" placeholder={i18n.t("contact.inputs.email")} name="email" required />
+                    <Textarea placeholder={i18n.t("contact.inputs.message")} name="message" />
                     <Box alignSelf="end">
-                      <Button isLoading={loading} type="submit" text="Submit" variant="solid" />
+                      <Button isLoading={loading} type="submit" tx="contact.submit" variant="solid" />
                     </Box>
                   </FormControl>
                 </Box>
