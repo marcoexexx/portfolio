@@ -28,7 +28,7 @@ const ja: Translations = {
   },
 
   about: {
-    content: "こんにちは！私は Aung Koko Lwin です.  始めから終わりまで、ダイナミックでクリエイティブな製品を作るのが楽しいです。Focused on developing intuitive experiences that constantly grow and improve based on user metrics. Always shipping."
+    content: "おい！私は Aung Koko Lwin です。ダイナミックでクリエイティブな製品を最初から最後まで作るのが好きです。ユーザー指標に基づいて継続的に成長し、改善される直感的なエクスペリエンスの開発に重点を置いています。常に発送します。"
   },
 
   projects: {
