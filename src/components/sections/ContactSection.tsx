@@ -107,9 +107,9 @@ export default function ContactSection() {
                   gap={6}
                 >
                   <Text tx="contact.socialAndAddress"
-                    fontSize="3xl"
+                    fontSize="xl"
                     fontFamily="heading"
-                    textAlign="center"
+                    textAlign="left"
                   />
                   <Box
                     display="flex"
@@ -154,7 +154,7 @@ export default function ContactSection() {
                   gap={6}
                 >
                   <Text tx="contact.sendMe"
-                    fontSize="3xl"
+                    fontSize="xl"
                     fontFamily="heading"
                     textAlign="center"
                   />
