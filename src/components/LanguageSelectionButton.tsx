@@ -15,7 +15,7 @@ interface LanguageSelectionButtonProps {
   onChangeCurrent: (country: keyof typeof countries) => void;
 }
 
-export default function LanguageSelectionButton(props: LanguageSelectionButtonProps) {
+export function LanguageSelectionButton(props: LanguageSelectionButtonProps) {
   const { current, onChangeCurrent } = props;
   
   // use(loading());

@@ -1,4 +1,4 @@
 export * from './HeroSection';
 export * from './ProfileSection';
 export * from './AboutSection';
-export * from './ProjectsSection.tsx';
+export * from './ProjectsSection';

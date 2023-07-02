@@ -23,7 +23,7 @@ export const projects: Map<ProjectEnum, Project> = new Map([
     source: "https://github.com/alk-neq-me/korean-romanization-converter",
     technologies: ["rust", "webassembly", "wasm", "tailwindcss", "yew"],
     image: "/projects/romaji.png",
-    link: undefined
+    link: "https://romanization.deno.dev/"
   }],
   ["emiji", {
     title: "Emoji Search",

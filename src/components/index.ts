@@ -9,6 +9,7 @@ export * from './AnimatedSection';
 export * from './Bio';
 export * from './Error';
 export * from './Loading';
-export * from './ErrorBoundary';
+export * from './ErrorBoundary'
 export * from './ScrollUpButton';
 export * from './ProjectCard';
+export * from './LanguageSelectionButton';
