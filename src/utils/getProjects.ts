@@ -6,6 +6,7 @@ export type ProjectEnum =
   | "calculator"
   | "koreanHandbook"
   | "ticTacToe"
+  | "memo"
 
 export type Project = {
   title: string,
@@ -33,14 +34,6 @@ export const projects: Map<ProjectEnum, Project> = new Map([
     image: "/projects/emoji.png",
     link: undefined,
   }],
-  ["calculator", {
-    title: "iOS Calculator",
-    getDescription: () => i18n.t("projects.calculator"),
-    source: "https://github.com/alk-neq-me/ios-calculator",
-    technologies: ["html", "css", "js"],
-    link: undefined,
-    image: "/projects/calculator.png",
-  }],
   ["koreanHandbook", {
     title: "Korean-Myanmar Handbook",
     getDescription: () => i18n.t("projects.koreanMyanmarHandbook"),
@@ -49,12 +42,28 @@ export const projects: Map<ProjectEnum, Project> = new Map([
     image: "/projects/korean-handbook.jpg",
     link: undefined,
   }],
+  ["calculator", {
+    title: "iOS Calculator",
+    getDescription: () => i18n.t("projects.calculator"),
+    source: "https://github.com/alk-neq-me/ios-calculator",
+    technologies: ["html", "css", "js"],
+    link: undefined,
+    image: "/projects/calculator.png",
+  }],
   ["ticTacToe", {
     title: "Minimax AI Tic-Tac-Toe (Python)",
     getDescription: () => i18n.t("projects.ticTacToe"),
     source: "https://github.com/alk-neq-me/ios-calculator",
     technologies: ["python"],
     image: "/projects/tic-tac-toe.png",
+    link: undefined,
+  }],
+  ["memo", {
+    title: "Memo - 메모 Terminal-based Project",
+    getDescription: () => i18n.t("projects.memo"),
+    source: "https://github.com/alk-neq-me/memo",
+    technologies: ["rust"],
+    image: "/projects/memo.png",
     link: undefined,
   }]
 ])
