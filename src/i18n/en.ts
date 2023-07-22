@@ -35,6 +35,7 @@ const en = {
     calculator: "GitHub Project: iOS Calculator Design (HTML/CSS/JS)",
     koreanMyanmarHandbook: "The Korea-Myanmar Language Learning project is an ongoing mobile application development written in React Native. This project aims to create a user-friendly language learning platform for Korean and Myanmar speakers. With an intuitive interface and interactive features, the app will provide access to a wide range of language resources, including vocabulary, grammar lessons, practice exercises, and audio pronunciations. Embark on your language learning journey with this upcoming mobile app and experience an immersive and effective way to master the Korean and Myanmar languages. Stay tuned for updates and get ready to elevate your language skills.",
     ticTacToe: "This console-based project showcases the implementation of the minimax algorithm for an intelligent Tic-Tac-Toe AI. Engage in challenging gameplay against the AI or challenge friends in an interactive terminal interface.",
+    movieRecommender: "Movie Recommender System using Python and Content-Based Method - A simple movie recommender system that suggests movies based on user preferences and movie content. Dataset sourced from TMDB.",
     memo: "This 메모 terminal-based project"
   },
 

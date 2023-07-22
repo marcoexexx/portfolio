@@ -37,6 +37,7 @@ const ko: Translations = {
     calculator: "GitHub Project: iOS Calculator Design (HTML/CSS/JS)",
     memo: "This 메모 terminal-based project",
     koreanMyanmarHandbook: "Korea-Myanmar Language Learning PROJECT는 React Native로 작성된 모바일 애플리케이션 개발을 진행 중입니다. 이 프로젝트는 한국어와 미얀마 사용자를 위한 사용자 친화적인 언어 학습 플랫폼을 만드는 것을 목표로 합니다. 직관적인 인터페이스와 대화형 기능을 갖춘 이 앱은 어휘, 문법 수업, 연습 문제 및 오디오 발음을 포함한 광범위한 언어 리소스에 대한 액세스를 제공합니다. 곧 출시될 이 모바일 앱으로 언어 학습 여정을 시작하고 한국어와 미얀마 언어를 마스터하는 몰입감 있고 효과적인 방법을 경험하세요. 업데이트를 계속 확인하고 언어 능력을 향상시킬 준비를 하십시오.",
+    movieRecommender: "Python과 콘텐츠 기반 방식을 이용한 영화 추천 시스템 - 사용자의 선호도와 영화 콘텐츠를 기반으로 영화를 추천하는 간단한 영화 추천 시스템. TMDB 에서 가져온 데이터 세트.",
     ticTacToe: "이 콘솔 기반 프로젝트는 지능형 Tic-Tac-Toe AI를 위한 minimax 알고리즘의 구현을 보여줍니다. AI를 상대로 도전적인 게임 플레이에 참여하거나 대화형 터미널 인터페이스에서 친구에게 도전하십시오."
   },
 

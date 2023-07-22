@@ -6,6 +6,7 @@ export type ProjectEnum =
   | "calculator"
   | "koreanHandbook"
   | "ticTacToe"
+  | "movieRecommender"
   | "memo"
 
 export type Project = {
@@ -56,6 +57,14 @@ export const projects: Map<ProjectEnum, Project> = new Map([
     source: "https://github.com/alk-neq-me/ios-calculator",
     technologies: ["python"],
     image: "/projects/tic-tac-toe.png",
+    link: undefined,
+  }],
+  ["movieRecommender", {
+    title: "Movie Recommender System Python (content based)",
+    getDescription: () => i18n.t("projects.movieRecommender"),
+    source: "https://github.com/alk-neq-me/movie-recommender-system-python/",
+    technologies: ["python", "sklearn", "streamlit"],
+    image: "/projects/recommender.png",
     link: undefined,
   }],
   ["memo", {

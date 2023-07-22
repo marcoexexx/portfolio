@@ -37,6 +37,7 @@ const zh: Translations = {
     calculator: "GitHub Project: iOS Calculator Design (HTML/CSS/JS)",
     koreanMyanmarHandbook: "韓緬語言學習項目是一個用 React Native 編寫的正在進行的移動應用程序開發。該項目旨在為韓國語和緬甸語使用者創建一個用戶友好的語言學習平台。該應用程序具有直觀的界面和交互功能，可提供廣泛的語言資源，包括詞彙、語法課程、練習和音頻發音。通過這款即將推出的移動應用程序踏上您的語言學習之旅，體驗一種身臨其境且有效的方式來掌握韓語和緬甸語。請繼續關注更新並準備好提高您的語言技能。",
     memo: "This 메모 terminal-based project",
+    movieRecommender: "使用 Python 和基於內容的方法的電影推薦系統 - 一個簡單的電影推薦系統，可根據用戶偏好和電影內容推薦電影。數據集來源於“TMDB”。",
     ticTacToe: "這個基於控制台的項目展示了智能 Tic-Tac-Toe AI 的極小極大算法的實現。與人工智能進行具有挑戰性的遊戲，或在交互式終端界面中挑戰朋友。",
   },
 
