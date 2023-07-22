@@ -1,5 +1,5 @@
 import { Box, IconButton, Image } from "@chakra-ui/react";
-import { FiExternalLink } from "react-icons/fi";
+import { IoLogoGithub } from 'react-icons/io5';
 
 import Text from "./Text";
 import { ProjectEnum, getProject, getTechnology, linkOpen } from "../utils";
@@ -24,7 +24,7 @@ export default function ProjectCard(props: ProjectCardProps) {
       gap={2}
       overflow='hidden'
     >
-      <Image onClick={linkOpen(source)} cursor="pointer" rounded="xl" objectFit='cover' src={image} alt={title} width="100%" />
+      <Image onClick={link ? linkOpen(link) : linkOpen(source)} cursor="pointer" rounded="xl" objectFit='cover' src={image} alt={title} width="100%" />
       <Link
         href={source}
         target="_blank"
@@ -40,7 +40,7 @@ export default function ProjectCard(props: ProjectCardProps) {
       </Link>
       {showDescription && <Text lineHeight="1.33rem" fontFamily="heading">
         {getDescription()}
-        {link && <IconButton onClick={linkOpen(link)} size='xs' ml={1} variant='text' icon={<FiExternalLink size="1rem" />} aria-label="external link" />}
+        <Text ml={5} display="inline">―</Text><IconButton onClick={linkOpen(source)} size='xs' ml={1} variant='text' icon={<IoLogoGithub size="1.2rem" />} aria-label="external link" />
       </Text>}
 
       {showDescription &&
