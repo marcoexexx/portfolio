@@ -63,7 +63,7 @@ export const projects: Map<ProjectEnum, Project> = new Map([
     title: "Movie Recommender System Python (content based)",
     getDescription: () => i18n.t("projects.movieRecommender"),
     source: "https://github.com/alk-neq-me/movie-recommender-system-python/",
-    technologies: ["python", "sklearn", "streamlit"],
+    technologies: ["python", "sklearn", "streamlit", "machine-learning"],
     image: "/projects/recommender.png",
     link: undefined,
   }],
