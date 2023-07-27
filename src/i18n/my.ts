@@ -18,6 +18,7 @@ const ko: Translations = {
     contact: "ဆက်သွယ်ရန်",
     viewSource: "View Source",
     source: "Source",
+    personal: "Personal"
   },
   
   hero: {

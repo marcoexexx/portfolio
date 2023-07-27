@@ -16,6 +16,7 @@ const en = {
     contact: "Contact Me",
     viewSource: "View Source",
     source: "Source",
+    personal: "Personal"
   },
   
   hero: {

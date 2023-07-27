@@ -18,6 +18,7 @@ const zh: Translations = {
     contact: "聯絡我",
     viewSource: "檢視原始碼",
     source: "原始碼",
+    personal: "Personal"
   },
   
   hero: {

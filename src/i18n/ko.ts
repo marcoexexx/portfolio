@@ -18,6 +18,7 @@ const ko: Translations = {
     contact: "연락처",
     viewSource: "소스 보기",
     source: "소스",
+    personal: "Personal"
   },
   
   hero: {

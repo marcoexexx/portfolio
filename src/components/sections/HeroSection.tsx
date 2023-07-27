@@ -46,7 +46,7 @@ export function HeroSection() {
               maxW={{ base: "270px", md: "320px" }}
             />
             <HStack gap={3}>
-              <Link  tx="hero.cv" textDecor="underline" href="public/cv_form.pdf" download />
+              <Link  tx="hero.cv" textDecor="underline" href="public/RESUME.pdf" download />
               <Link onClick={sectionScroll("contact")} tx="hero.contact" textDecor="underline" />
             </HStack>
           </VStack>

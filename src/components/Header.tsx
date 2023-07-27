@@ -50,6 +50,11 @@ export function Header() {
             <IoLogoGithub />
             <Text tx="navbar.source" />
           </Link>
+          <Link 
+            href="https://marco-exexx.vercel.app/" 
+            target="_blank"
+            tx="navbar.personal"
+          />
         </Stack>
 
         <Box display="flex" flexDirection="row" gap={3}>
@@ -67,6 +72,7 @@ export function Header() {
                 <Link as={MenuItem} tx="navbar.projects" onClick={sectionScroll("projects")} />
                 <Link as={MenuItem} tx="navbar.contact" onClick={sectionScroll("contact")} />
                 <Link as={MenuItem} tx="navbar.viewSource" onClick={linkOpen("https://github.com/alk-neq-me/portfolio")} />
+                <Link as={MenuItem} tx="navbar.personal" onClick={linkOpen("https://marco-exexx.vercel.app/")} />
               </MenuList>
             </Menu>
           </Box>

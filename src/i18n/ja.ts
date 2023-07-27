@@ -18,6 +18,7 @@ const ja: Translations = {
     contact: "お問い合わせ",
     viewSource: "ソースを表示",
     source: "ソース",
+    personal: "Personal"
   },
   
   hero: {
