@@ -4,8 +4,13 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import { Link, ThemeToggleButton } from ".";
 import Text from "./Text";
 import { linkOpen, sectionScroll } from "../utils";
+import { useCallback } from "react";
 
 export function Header() {
+  const handleScrollTop = useCallback(() => {
+    window.scrollTo({ behavior: "smooth", top: 0 });
+  }, []);
+
   return (
     <Box
       position="fixed"
@@ -26,7 +31,7 @@ export function Header() {
         gap={10}
       >
         <Flex align="center">
-          <Heading as="h1" fontSize="xl" letterSpacing="tighter">Aung Koko Lwin</Heading>
+          <Heading as="h1" cursor="pointer" onClick={handleScrollTop} fontSize="xl" letterSpacing="tighter">Aung Koko Lwin</Heading>
         </Flex>
         <Stack
           direction={{ base: "column", md: "row" }}
