@@ -4,7 +4,6 @@ export type ProjectEnum =
   | "romaji" 
   | "emiji"
   | "calculator"
-  | "koreanHandbook"
   | "ticTacToe"
   | "movieRecommender"
   | "memo"
@@ -33,14 +32,6 @@ export const projects: Map<ProjectEnum, Project> = new Map([
     source: "https://github.com/alk-neq-me/emoji-search",
     technologies: ["react", "typescript"],
     image: "/projects/emoji.png",
-    link: undefined,
-  }],
-  ["koreanHandbook", {
-    title: "Korean-Myanmar Handbook",
-    getDescription: () => i18n.t("projects.koreanMyanmarHandbook"),
-    source: "https://github.com/alk-neq-me/korean-learn",
-    technologies: ["react", "typescript", "expo", "react-native"],
-    image: "/projects/korean-handbook.jpg",
     link: undefined,
   }],
   ["calculator", {
