@@ -2,8 +2,6 @@ import { i18n } from "../i18n";
 
 export type ProjectEnum = 
   | "romaji" 
-  | "emiji"
-  | "calculator"
   | "ticTacToe"
   | "movieRecommender"
   | "memo"
@@ -25,22 +23,6 @@ export const projects: Map<ProjectEnum, Project> = new Map([
     technologies: ["rust", "webassembly", "wasm", "tailwindcss", "yew"],
     image: "/projects/romaji.png",
     link: "https://romanization.deno.dev/"
-  }],
-  ["emiji", {
-    title: "Emoji Search",
-    getDescription: () => i18n.t("projects.emoji"),
-    source: "https://github.com/alk-neq-me/emoji-search",
-    technologies: ["react", "typescript"],
-    image: "/projects/emoji.png",
-    link: undefined,
-  }],
-  ["calculator", {
-    title: "iOS Calculator",
-    getDescription: () => i18n.t("projects.calculator"),
-    source: "https://github.com/alk-neq-me/ios-calculator",
-    technologies: ["html", "css", "js"],
-    link: undefined,
-    image: "/projects/calculator.png",
   }],
   ["ticTacToe", {
     title: "Minimax AI Tic-Tac-Toe (Python)",
