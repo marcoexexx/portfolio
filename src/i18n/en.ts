@@ -35,12 +35,12 @@ const en = {
     ticTacToe: "This console-based project showcases the implementation of the minimax algorithm for an intelligent Tic-Tac-Toe AI. Engage in challenging gameplay against the AI or challenge friends in an interactive terminal interface.",
     movieRecommender: "Movie Recommender System using Python and Content-Based Method - A simple movie recommender system that suggests movies based on user preferences and movie content. Dataset sourced from TMDB.",
     memo: "This 메모 terminal-based project",
-    korean2romajiMobile: "Welcome to the React Native Expo using Native with Rust project! In this repository, we explore how to integrate a Rust native module into a React Native Expo project. This allows you to harness the power and performance of Rust within your Expo-based mobile application.",
+    korean2romajiMobile: "Welcome to the React Native Expo using Native with Rust project! In this repository, I explore how to integrate a Rust native module into a React Native Expo project. This allows you to harness the power and performance of Rust within your Expo-based mobile application.",
   },
 
   contact: {
     description: "Interested in working together or have any questions? Feel free to reach out to me!",
-    sendMe: "Send me a message",
+    sendMe: "Send me a message", 
     socialAndAddress: "Social and Address",
     submit: "submit",
     labelAddress: "Address",

@@ -36,7 +36,7 @@ const ko: Translations = {
     romaji: "Korean စာသားကို Romanized ပုံစံသို့ ပြောင်းရန် open-source ကိရိယာတစ်ခုဖြစ်ပြီး မူရင်းဘာသာစကားမဟုတ်သူများအတွက် ကိုရီးယားစကားလုံးများကို ဖတ်ရန်နှင့် အသံထွက်ရန် ပိုမိုလွယ်ကူစေသည်။",
     memo: "This 메모 terminal-based project",
     movieRecommender: "Python နှင့် Content-Based Method ကိုအသုံးပြုထားသော Movie Recommender System - အသုံးပြုသူနှစ်သက်မှုများနှင့် ရုပ်ရှင်အကြောင်းအရာများအပေါ် အခြေခံ၍ ရုပ်ရှင်များကို အကြံပြုပေးသည့် ရိုးရှင်းသော ရုပ်ရှင်အကြံပြုပေးသည့်စနစ်။ TMDB မှရရှိသောဒေတာအတွဲ။",
-    korean2romajiMobile: "Welcome to the React Native Expo using Native with Rust project! In this repository, we explore how to integrate a Rust native module into a React Native Expo project. This allows you to harness the power and performance of Rust within your Expo-based mobile application.",
+    korean2romajiMobile: "``React Native Expo Using Native with Rust project မှကြိုဆိုပါသည်။`` ဤ repository တွင်၊ React Native Expo ပရောဂျက်တစ်ခုတွင် Rust Native module ကို ပေါင်းစပ် လေ့လာထားပါတယ် ၎င်းသည်  Expo-based mobile application အတွင်း Rust ၏ ပါဝါနှင့် စွမ်းဆောင်ရည်ကို မြှင့်တင်နိုင်ပါတယ်",
     ticTacToe: "ဒီ console-based ပရောဂျက်သည် ဉာဏ်ရည်ထက်မြက်သော Tic-Tac-Toe AI အတွက် minimax algorithm အကောင်အထည်ဖော်မှုကို ပြသထားသည်။ AI ကိုဆန့်ကျင်သည့်စိန်ခေါ်မှုဂိမ်းတွင်ပါဝင်ပါသို့မဟုတ်အပြန်အလှန်အကျိုးသက်ရောက်သော terminal interface တွင်သူငယ်ချင်းများကိုစိန်ခေါ်ပါ။",
   },
 
