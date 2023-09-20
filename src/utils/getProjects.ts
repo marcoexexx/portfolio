@@ -5,6 +5,7 @@ export type ProjectEnum =
   | "ticTacToe"
   | "movieRecommender"
   | "memo"
+  | "korean2romajiMobile"
 
 export type Project = {
   title: string,
@@ -30,6 +31,14 @@ export const projects: Map<ProjectEnum, Project> = new Map([
     source: "https://github.com/alk-neq-me/ios-calculator",
     technologies: ["python"],
     image: "/projects/tic-tac-toe.png",
+    link: undefined,
+  }],
+  ["korean2romajiMobile", {
+    title: "Korean to romaji conveter (Android)",
+    getDescription: () => i18n.t("projects.korean2romajiMobile"),
+    source: "https://github.com/alk-neq-me/react-native-expo-using-native-with-rust/",
+    technologies: ["rust", "typescript", "react", "react-expo", "react-native"],
+    image: "/projects/korean2romajiMobile.png",
     link: undefined,
   }],
   ["movieRecommender", {

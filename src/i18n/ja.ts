@@ -36,6 +36,7 @@ const ja: Translations = {
     romaji: "韓国語のテキストをローマ字形式に変換するオープンソース ツール。これにより、非母語話者でも韓国語の単語を読んだり発音したりしやすくなります。",
     movieRecommender: "Python とコンテンツベースの方法を使用した映画レコメンダー システム - ユーザーの好みと映画コンテンツに基づいて映画を提案するシンプルな映画レコメンダー システム。データセットは「TMDB」から取得されています。",
     ticTacToe: "このコンソールベースのプロジェクトでは、インテリジェントな三目並べ AI のミニマックス アルゴリズムの実装を紹介します。インタラクティブなターミナル インターフェイスで、AI を相手に挑戦的なゲームプレイに参加したり、友人に挑戦したりできます。",
+    korean2romajiMobile: "Welcome to the React Native Expo using Native with Rust project! In this repository, we explore how to integrate a Rust native module into a React Native Expo project. This allows you to harness the power and performance of Rust within your Expo-based mobile application.",
     memo: "This 메모 terminal-based project"
   },
 

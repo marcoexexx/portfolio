@@ -36,6 +36,7 @@ const zh: Translations = {
     romaji: "一個開源工具，可將韓語文本轉換為羅馬化形式，使非母語人士更容易閱讀和發音韓語單詞。",
     memo: "This 메모 terminal-based project",
     movieRecommender: "使用 Python 和基於內容的方法的電影推薦系統 - 一個簡單的電影推薦系統，可根據用戶偏好和電影內容推薦電影。數據集來源於“TMDB”。",
+    korean2romajiMobile: "Welcome to the React Native Expo using Native with Rust project! In this repository, we explore how to integrate a Rust native module into a React Native Expo project. This allows you to harness the power and performance of Rust within your Expo-based mobile application.",
     ticTacToe: "這個基於控制台的項目展示了智能 Tic-Tac-Toe AI 的極小極大算法的實現。與人工智能進行具有挑戰性的遊戲，或在交互式終端界面中挑戰朋友。",
   },
 

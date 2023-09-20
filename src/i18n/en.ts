@@ -34,7 +34,8 @@ const en = {
     romaji: "An open-source tool to convert Korean text into Romanized form, making it easier for non-native speakers to read and pronounce Korean words.",
     ticTacToe: "This console-based project showcases the implementation of the minimax algorithm for an intelligent Tic-Tac-Toe AI. Engage in challenging gameplay against the AI or challenge friends in an interactive terminal interface.",
     movieRecommender: "Movie Recommender System using Python and Content-Based Method - A simple movie recommender system that suggests movies based on user preferences and movie content. Dataset sourced from TMDB.",
-    memo: "This 메모 terminal-based project"
+    memo: "This 메모 terminal-based project",
+    korean2romajiMobile: "Welcome to the React Native Expo using Native with Rust project! In this repository, we explore how to integrate a Rust native module into a React Native Expo project. This allows you to harness the power and performance of Rust within your Expo-based mobile application.",
   },
 
   contact: {
