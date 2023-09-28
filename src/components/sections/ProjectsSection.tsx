@@ -1,5 +1,5 @@
 import { Box, Switch } from "@chakra-ui/react";
-import { AnimatedSection } from "..";
+import { AnimatedSection, Link } from "..";
 import Text from "../Text";
 import ProjectCard from "../ProjectCard";
 import { ProjectEnum, getStore, projects, setStore } from "../../utils";
@@ -56,6 +56,13 @@ export function ProjectsSection() {
             </Box>
           ))}
         </Box>
+
+        <Link 
+          textAlign="right" 
+          tx="common.otherProjects"
+          href="https://github.com/alk-neq-me?tab=repositories"
+          target="_blank"
+        />
       </Box>
     </AnimatedSection>
   )

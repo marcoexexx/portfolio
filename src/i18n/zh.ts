@@ -8,6 +8,7 @@ const zh: Translations = {
     loading: "載入中...",
     error: "發生錯誤",
     retry: "重試",
+    otherProjects: "其他的項目",
     noResults: "沒有結果",
     save: "儲存"
   },
@@ -36,6 +37,7 @@ const zh: Translations = {
     romaji: "一個開源工具，可將韓語文本轉換為羅馬化形式，使非母語人士更容易閱讀和發音韓語單詞。",
     memo: "This 메모 terminal-based project",
     movieRecommender: "使用 Python 和基於內容的方法的電影推薦系統 - 一個簡單的電影推薦系統，可根據用戶偏好和電影內容推薦電影。數據集來源於“TMDB”。",
+    breadit: "This is a Reddit clone project, known as \"Breadit Readit Clone.\" This application aims to replicate the core functionalities of Reddit, allowing users to post, discuss, and upvote/downvote content on various topics. It's built using a modern tech stack, including Next.js, Prisma, Tailwind CSS, and more.",
     korean2romajiMobile: "「歡迎來到 React Native Expo 使用 Native 與 Rust 專案。」在此儲存庫中， React Native Expo 專案探索了 Rust Native 模組的集成，該模組在基於 Expo 的行動應用程式中利用了 Rust 的功能和效能。",
     ticTacToe: "這個基於控制台的項目展示了智能 Tic-Tac-Toe AI 的極小極大算法的實現。與人工智能進行具有挑戰性的遊戲，或在交互式終端界面中挑戰朋友。",
   },

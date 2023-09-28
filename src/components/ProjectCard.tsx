@@ -24,7 +24,15 @@ export default function ProjectCard(props: ProjectCardProps) {
       gap={2}
       overflow='hidden'
     >
-      <Image onClick={link ? linkOpen(link) : linkOpen(source)} cursor="pointer" rounded="xl" objectFit='cover' src={image} alt={title} width="100%" />
+      <Image 
+        onClick={link ? linkOpen(link) : linkOpen(source)} 
+        cursor="pointer" 
+        rounded="xl" 
+        objectFit='cover' 
+        src={image} 
+        alt={title} 
+        width="100%" 
+      />
       <Link
         href={source}
         target="_blank"

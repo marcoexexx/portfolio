@@ -6,6 +6,7 @@ const ko: Translations = {
     cancel: "취소",
     close: "닫기",
     loading: "로딩 중...",
+    otherProjects: "다른 프로젝트",
     error: "오류 발생",
     retry: "다시 시도",
     noResults: "결과 없음",
@@ -37,6 +38,7 @@ const ko: Translations = {
     memo: "This 메모 terminal-based project",
     movieRecommender: "Python과 콘텐츠 기반 방식을 이용한 영화 추천 시스템 - 사용자의 선호도와 영화 콘텐츠를 기반으로 영화를 추천하는 간단한 영화 추천 시스템. TMDB 에서 가져온 데이터 세트.",
     korean2romajiMobile: "React Native Expo using Native with Rust 프로젝트``에 오신 것을 환영합니다! 이 저장소에서는 Rust 네이티브 모듈을 React Native Expo 프로젝트에 통합하는 방법을 살펴봅니다. 이를 통해 Expo 기반 모바일 애플리케이션 내에서 Rust의 성능과 성능을 활용할 수 있습니다.",
+    breadit: "This is a Reddit clone project, known as \"Breadit Readit Clone.\" This application aims to replicate the core functionalities of Reddit, allowing users to post, discuss, and upvote/downvote content on various topics. It's built using a modern tech stack, including Next.js, Prisma, Tailwind CSS, and more.",
     ticTacToe: "이 콘솔 기반 프로젝트는 지능형 Tic-Tac-Toe AI를 위한 minimax 알고리즘의 구현을 보여줍니다. AI를 상대로 도전적인 게임 플레이에 참여하거나 대화형 터미널 인터페이스에서 친구에게 도전하십시오."
   },
 

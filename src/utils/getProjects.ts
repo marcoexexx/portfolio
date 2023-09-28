@@ -6,6 +6,7 @@ export type ProjectEnum =
   | "movieRecommender"
   | "memo"
   | "korean2romajiMobile"
+  | "breadit"
 
 export type Project = {
   title: string,
@@ -56,7 +57,15 @@ export const projects: Map<ProjectEnum, Project> = new Map([
     technologies: ["rust"],
     image: "/projects/memo.png",
     link: undefined,
-  }]
+  }],
+  ["breadit", {
+    title: "Reddit Clone (Breadit Readit Clone",
+    getDescription: () => i18n.t("projects.breadit"),
+    source: "https://github.com/alk-neq-me/breadit-readit-clone",
+    technologies: ["typescript", "react", "prisma", "postgresql", "nextjs", "next-auth"],
+    image: "/projects/bread-dev.png",
+    link: undefined,
+  }],
 ])
 
 export function getProject(project: ProjectEnum) {

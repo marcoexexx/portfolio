@@ -4,6 +4,7 @@ const ja: Translations = {
   common: {
     ok: "OK",
     cancel: "キャンセル",
+    otherProjects: "他のプロジェクト",
     close: "閉じる",
     loading: "読み込み中...",
     error: "エラーが発生しました",
@@ -37,7 +38,8 @@ const ja: Translations = {
     movieRecommender: "Python とコンテンツベースの方法を使用した映画レコメンダー システム - ユーザーの好みと映画コンテンツに基づいて映画を提案するシンプルな映画レコメンダー システム。データセットは「TMDB」から取得されています。",
     ticTacToe: "このコンソールベースのプロジェクトでは、インテリジェントな三目並べ AI のミニマックス アルゴリズムの実装を紹介します。インタラクティブなターミナル インターフェイスで、AI を相手に挑戦的なゲームプレイに参加したり、友人に挑戦したりできます。",
     korean2romajiMobile: "「Native with Rust プロジェクトを使用した React Native Expo へようこそ!」 このリポジトリでは、Rust ネイティブ モジュールを React Native Expo プロジェクトに統合する方法を検討します。これにより、Expo ベースのモバイル アプリケーション内で Rust のパワーとパフォーマンスを活用できるようになります。",
-    memo: "This 메모 terminal-based project"
+    breadit: "This is a Reddit clone project, known as \"Breadit Readit Clone.\" This application aims to replicate the core functionalities of Reddit, allowing users to post, discuss, and upvote/downvote content on various topics. It's built using a modern tech stack, including Next.js, Prisma, Tailwind CSS, and more.",
+    memo: "This 메모 terminal-based project",
   },
 
   contact: {

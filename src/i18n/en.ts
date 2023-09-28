@@ -7,7 +7,8 @@ const en = {
     error: "Error",
     retry: "Retry",
     noResults: "No Results",
-    save: "Save"
+    save: "Save",
+    otherProjects: "Other Projects",
   },
 
   navbar: {
@@ -36,6 +37,7 @@ const en = {
     movieRecommender: "Movie Recommender System using Python and Content-Based Method - A simple movie recommender system that suggests movies based on user preferences and movie content. Dataset sourced from TMDB.",
     memo: "This 메모 terminal-based project",
     korean2romajiMobile: "Welcome to the React Native Expo using Native with Rust project! In this repository, I explore how to integrate a Rust native module into a React Native Expo project. This allows you to harness the power and performance of Rust within your Expo-based mobile application.",
+    breadit: "This is a Reddit clone project, known as \"Breadit Readit Clone.\" This application aims to replicate the core functionalities of Reddit, allowing users to post, discuss, and upvote/downvote content on various topics. It's built using a modern tech stack, including Next.js, Prisma, Tailwind CSS, and more."
   },
 
   contact: {
