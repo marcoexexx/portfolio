@@ -10,4 +10,3 @@ I'm deeply passionate about Rust, Python, and TypeScript, and I'm always immerse
 ### The vibe
 
 :panda_face: My vibe is all about relaxation, writing quality code, sipping on tea like a true Canadian nerd, and embracing the joys of life 🍵
-
