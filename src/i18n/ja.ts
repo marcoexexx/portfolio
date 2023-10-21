@@ -39,7 +39,7 @@ const ja: Translations = {
     ticTacToe: "このコンソールベースのプロジェクトでは、インテリジェントな三目並べ AI のミニマックス アルゴリズムの実装を紹介します。インタラクティブなターミナル インターフェイスで、AI を相手に挑戦的なゲームプレイに参加したり、友人に挑戦したりできます。",
     korean2romajiMobile: "「Native with Rust プロジェクトを使用した React Native Expo へようこそ!」 このリポジトリでは、Rust ネイティブ モジュールを React Native Expo プロジェクトに統合する方法を検討します。これにより、Expo ベースのモバイル アプリケーション内で Rust のパワーとパフォーマンスを活用できるようになります。",
     breadit: "This is a Reddit clone project, known as \"Breadit Readit Clone.\" This application aims to replicate the core functionalities of Reddit, allowing users to post, discuss, and upvote/downvote content on various topics. It's built using a modern tech stack, including Next.js, Prisma, Tailwind CSS, and more.",
-    memo: "This 메모 terminal-based project",
+    fortipass: "FortiPass は、Rust に実装された安全で信頼性の高いパスワード マネージャーです。セキュリティと使いやすさに重点を置き、パスワードを管理するためのコマンドライン インターフェイス (CLI) を提供します。",
   },
 
   contact: {

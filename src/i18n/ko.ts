@@ -35,7 +35,7 @@ const ko: Translations = {
 
   projects: {
     romaji: "원어민이 아닌 사용자가 한국어 단어를 쉽게 읽고 발음할 수 있도록 한국어 텍스트를 로마자 형식으로 변환하는 오픈 소스 도구입니다.",
-    memo: "This 메모 terminal-based project",
+    fortipass: "FortiPass는 Rust로 구현된 안전하고 안정적인 비밀번호 관리자입니다. 보안과 사용 편의성에 중점을 두고 비밀번호를 관리하기 위한 명령줄 인터페이스(CLI)를 제공합니다.",
     movieRecommender: "Python과 콘텐츠 기반 방식을 이용한 영화 추천 시스템 - 사용자의 선호도와 영화 콘텐츠를 기반으로 영화를 추천하는 간단한 영화 추천 시스템. TMDB 에서 가져온 데이터 세트.",
     korean2romajiMobile: "React Native Expo using Native with Rust 프로젝트``에 오신 것을 환영합니다! 이 저장소에서는 Rust 네이티브 모듈을 React Native Expo 프로젝트에 통합하는 방법을 살펴봅니다. 이를 통해 Expo 기반 모바일 애플리케이션 내에서 Rust의 성능과 성능을 활용할 수 있습니다.",
     breadit: "This is a Reddit clone project, known as \"Breadit Readit Clone.\" This application aims to replicate the core functionalities of Reddit, allowing users to post, discuss, and upvote/downvote content on various topics. It's built using a modern tech stack, including Next.js, Prisma, Tailwind CSS, and more.",

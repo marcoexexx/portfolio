@@ -4,7 +4,7 @@ export type ProjectEnum =
   | "romaji" 
   | "ticTacToe"
   | "movieRecommender"
-  | "memo"
+  | "Fortipass"
   | "korean2romajiMobile"
   | "breadit"
 
@@ -50,12 +50,12 @@ export const projects: Map<ProjectEnum, Project> = new Map([
     image: "/projects/recommender.png",
     link: undefined,
   }],
-  ["memo", {
-    title: "Memo - 메모 Terminal-based Project",
-    getDescription: () => i18n.t("projects.memo"),
-    source: "https://github.com/alk-neq-me/memo",
+  ["Fortipass", {
+    title: "FortiPass - A Rust-Based Password Manager",
+    getDescription: () => i18n.t("projects.fortipass"),
+    source: "https://github.com/alk-neq-me/fortipass",
     technologies: ["rust"],
-    image: "/projects/memo.png",
+    image: "/projects/fortipass.png",
     link: undefined,
   }],
   ["breadit", {
