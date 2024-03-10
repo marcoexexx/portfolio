@@ -46,7 +46,7 @@ export function Header() {
           <Link tx="navbar.projects" onClick={sectionScroll("projects")} />
           <Link tx="navbar.contact" onClick={sectionScroll("contact")} />
           <Link 
-            href="https://github.com/alk-neq-me/portfolio" 
+            href="https://github.com/marcoexexx/portfolio" 
             target="_blank"
             display="inline-flex"
             alignItems="center"
@@ -76,7 +76,7 @@ export function Header() {
                 <Link as={MenuItem} tx="navbar.about" onClick={sectionScroll("about")} />
                 <Link as={MenuItem} tx="navbar.projects" onClick={sectionScroll("projects")} />
                 <Link as={MenuItem} tx="navbar.contact" onClick={sectionScroll("contact")} />
-                <Link as={MenuItem} tx="navbar.viewSource" onClick={linkOpen("https://github.com/alk-neq-me/portfolio")} />
+                <Link as={MenuItem} tx="navbar.viewSource" onClick={linkOpen("https://github.com/marcoexexx/portfolio")} />
                 <Link as={MenuItem} tx="navbar.personal" onClick={linkOpen("https://marco-exexx.vercel.app/")} />
               </MenuList>
             </Menu>
