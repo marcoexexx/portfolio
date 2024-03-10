@@ -140,7 +140,7 @@ export default function ContactSection() {
                   >
                     <IconButton onClick={linkOpen("https://www.facebook.com/marco.exexx/")} color={useColorModeValue("black", "white")} variant='link' icon={<FaFacebookF />} aria-label="facebook link" />
                     <IconButton onClick={linkOpen("https://www.instagram.com/marco.exexx/")} color={useColorModeValue("black", "white")} variant='link' icon={<FaInstagram />} aria-label="facebook link" />
-                    <IconButton onClick={linkOpen("https://www.github.com/alk-neq-me/")} color={useColorModeValue("black", "white")} variant='link' icon={<FaGithubAlt />} aria-label="facebook link" />
+                    <IconButton onClick={linkOpen("https://www.github.com/marcoexexx/")} color={useColorModeValue("black", "white")} variant='link' icon={<FaGithubAlt />} aria-label="facebook link" />
                   </Box>
                 </Box>
               </TabPanel>
