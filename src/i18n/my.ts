@@ -37,7 +37,7 @@ const ko: Translations = {
     romaji: "Korean စာသားကို Romanized ပုံစံသို့ ပြောင်းရန် open-source ကိရိယာတစ်ခုဖြစ်ပြီး မူရင်းဘာသာစကားမဟုတ်သူများအတွက် ကိုရီးယားစကားလုံးများကို ဖတ်ရန်နှင့် အသံထွက်ရန် ပိုမိုလွယ်ကူစေသည်။",
     fortipass: "Rust  ဖြင့် ရေးသားထားသည့် လုံခြုံပြီး ယုံကြည်စိတ်ချရသော password manager ဖြစ်သည်။ ၎င်းသည် လုံခြုံရေးနှင့် အသုံးပြုရလွယ်ကူပီး သင့် password များကို စီမံခန့်ခွဲရန်အတွက် command-line interface (CLI) ဖြင့် သုံးနိုင်ပါသည်",
     movieRecommender: "Python နှင့် Content-Based Method ကိုအသုံးပြုထားသော Movie Recommender System - အသုံးပြုသူနှစ်သက်မှုများနှင့် ရုပ်ရှင်အကြောင်းအရာများအပေါ် အခြေခံ၍ ရုပ်ရှင်များကို အကြံပြုပေးသည့် ရိုးရှင်းသော ရုပ်ရှင်အကြံပြုပေးသည့်စနစ်။ TMDB မှရရှိသောဒေတာအတွဲ။",
-    breadit: "This is a Reddit clone project, known as \"Breadit Readit Clone.\" This application aims to replicate the core functionalities of Reddit, allowing users to post, discuss, and upvote/downvote content on various topics. It's built using a modern tech stack, including Next.js, Prisma, Tailwind CSS, and more.",
+    ecommerce: "fullstack features rich ecommerce admin dashboard",
     korean2romajiMobile: "``React Native Expo Using Native with Rust project မှကြိုဆိုပါသည်။`` ဤ repository တွင်၊ React Native Expo ပရောဂျက်တစ်ခုတွင် Rust Native module ကို ပေါင်းစပ် လေ့လာထားပါတယ် ၎င်းသည်  Expo-based mobile application အတွင်း Rust ၏ ပါဝါနှင့် စွမ်းဆောင်ရည်ကို မြှင့်တင်နိုင်ပါတယ်",
     ticTacToe: "ဒီ console-based ပရောဂျက်သည် ဉာဏ်ရည်ထက်မြက်သော Tic-Tac-Toe AI အတွက် minimax algorithm အကောင်အထည်ဖော်မှုကို ပြသထားသည်။ AI ကိုဆန့်ကျင်သည့်စိန်ခေါ်မှုဂိမ်းတွင်ပါဝင်ပါသို့မဟုတ်အပြန်အလှန်အကျိုးသက်ရောက်သော terminal interface တွင်သူငယ်ချင်းများကိုစိန်ခေါ်ပါ။",
   },

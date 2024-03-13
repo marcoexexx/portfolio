@@ -7,6 +7,7 @@ export type ProjectEnum =
   | "Fortipass"
   | "korean2romajiMobile"
   | "breadit"
+  | "ecommerceDashboard"
 
 export type Project = {
   title: string,
@@ -21,7 +22,7 @@ export const projects: Map<ProjectEnum, Project> = new Map([
   ["romaji", {
     title: "Korean Romanization Converter",
     getDescription: () => i18n.t("projects.romaji"),
-    source: "https://github.com/alk-neq-me/korean-romanization-converter",
+    source: "https://github.com/marcoexexx/korean-romanization-converter",
     technologies: ["rust", "webassembly", "wasm", "tailwindcss", "yew"],
     image: "/projects/romaji.png",
     link: "https://romanization.deno.dev/"
@@ -29,7 +30,7 @@ export const projects: Map<ProjectEnum, Project> = new Map([
   ["ticTacToe", {
     title: "Minimax AI Tic-Tac-Toe (Python)",
     getDescription: () => i18n.t("projects.ticTacToe"),
-    source: "https://github.com/alk-neq-me/ios-calculator",
+    source: "https://github.com/marcoexexx/ios-calculator",
     technologies: ["python"],
     image: "/projects/tic-tac-toe.png",
     link: undefined,
@@ -37,7 +38,7 @@ export const projects: Map<ProjectEnum, Project> = new Map([
   ["korean2romajiMobile", {
     title: "Korean to romaji conveter (Android)",
     getDescription: () => i18n.t("projects.korean2romajiMobile"),
-    source: "https://github.com/alk-neq-me/react-native-expo-using-native-with-rust/",
+    source: "https://github.com/marcoexexx/react-native-expo-using-native-with-rust/",
     technologies: ["rust", "typescript", "react", "react-expo", "react-native"],
     image: "/projects/korean2romajiMobile.png",
     link: undefined,
@@ -45,7 +46,7 @@ export const projects: Map<ProjectEnum, Project> = new Map([
   ["movieRecommender", {
     title: "Movie Recommender System Python (content based)",
     getDescription: () => i18n.t("projects.movieRecommender"),
-    source: "https://github.com/alk-neq-me/movie-recommender-system-python/",
+    source: "https://github.com/marcoexexx/movie-recommender-system-python/",
     technologies: ["python", "sklearn", "streamlit", "machine-learning"],
     image: "/projects/recommender.png",
     link: undefined,
@@ -53,17 +54,17 @@ export const projects: Map<ProjectEnum, Project> = new Map([
   ["Fortipass", {
     title: "FortiPass - A Rust-Based Password Manager",
     getDescription: () => i18n.t("projects.fortipass"),
-    source: "https://github.com/alk-neq-me/fortipass",
+    source: "https://github.com/marcoexexx/fortipass",
     technologies: ["rust"],
     image: "/projects/fortipass.png",
     link: undefined,
   }],
-  ["breadit", {
-    title: "Reddit Clone (Breadit Readit Clone",
-    getDescription: () => i18n.t("projects.breadit"),
-    source: "https://github.com/alk-neq-me/breadit-readit-clone",
-    technologies: ["typescript", "react", "prisma", "postgresql", "nextjs", "next-auth"],
-    image: "/projects/bread-dev.png",
+  ["ecommerceDashboard", {
+    title: "Ecommerce Dashboard (Fullstack MERN Stack)",
+    getDescription: () => i18n.t("projects.ecommerce"),
+    source: "https://github.com/marcoexexx/admin-dashboard",
+    technologies: ["typescript", "https", "react", "prisma", "mongodb", "jwt", "oauth", "mui", "redis", "docker"],
+    image: "/projects/admin-dashboard.png",
     link: undefined,
   }],
 ])

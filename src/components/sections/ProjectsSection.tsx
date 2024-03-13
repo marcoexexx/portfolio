@@ -60,7 +60,7 @@ export function ProjectsSection() {
         <Link 
           textAlign="right" 
           tx="common.otherProjects"
-          href="https://github.com/alk-neq-me?tab=repositories"
+          href="https://github.com/marcoexexx?tab=repositories"
           target="_blank"
         />
       </Box>
